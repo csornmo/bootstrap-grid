@@ -5,7 +5,7 @@ body {
 	margin-bottom: 100px;
 }
 
-.language-css {
+.language-css, .language-html {
 	white-space: pre-wrap!important;       /* css-3 */
 	white-space: -moz-pre-wrap!important;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap!important;      /* Opera 4-6 */
@@ -85,6 +85,8 @@ button {
 	cursor: pointer;
 	font-size: 16px;
     transition: 0.2s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 button:hover {
@@ -198,4 +200,85 @@ button:hover {
 }
 .btn-link:hover {
 	opacity: 0.8;
+}
+
+/* TABS */
+.tab:not(.show) {
+	display: none;
+}
+.tabs {
+	background: #6a36b6;
+}
+.tab-buttons a {
+	color: #fff;
+	text-decoration: none;
+	margin: 20px 0;
+	padding: 10px 0;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+	font-size: 20px;
+	margin-right: 40px;
+}
+
+.tab-buttons a:hover,
+.tab-buttons a.active {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+
+
+.text-box {
+	color: #fff;
+	position: relative;
+	background: #2f0869;
+	padding: 10px;
+    display: inline-block;
+    margin-right: 40px;
+}
+.text-box:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-left-color: #2f0869;
+	border-width: 20px;
+	margin-top: -20px;
+}
+
+/* EXAMPLES */
+
+.bootstrap-grid--example [class^=bootstrap-grid--col] {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 240, 243);
+}
+
+.nt {
+    color: #2f6f9f;
+}
+.na {
+    color: #4f9fcf;
+}
+.s {
+    color: #d44950;
+}
+
+.icon-view {
+	background-image: url(../img/glasses.svg);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: center;
+	font-size: 0;
+}
+
+.icon-code {
+	background-image: url(../img/html-coding.svg);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: center;
+	font-size: 0;
 }
