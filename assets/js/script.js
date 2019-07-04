@@ -95,8 +95,5 @@ $(".tab-buttons a").click(function (e) {
 	e.preventDefault();
 	$(this).addClass('active').siblings().removeClass('active');
 	var id = $(this).attr('href');
-
-	console.log(id);
-
 	$(id + '.tab').addClass('show').siblings().removeClass('show');
 });
