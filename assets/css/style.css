@@ -268,7 +268,7 @@ button:hover {
 }
 
 .icon-view {
-	background-image: url(../img/glasses.svg);
+	background-image: url('../img/glasses.svg');
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: center;
@@ -276,7 +276,7 @@ button:hover {
 }
 
 .icon-code {
-	background-image: url(../img/html-coding.svg);
+	background-image: url('../img/html-coding.svg');
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: center;
