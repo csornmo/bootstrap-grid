@@ -85,7 +85,7 @@ $(".download-button").click(function (e) {
     var prefixValue = $('.prefix-value').text();
 
 	// Start file download.
-	download(prefixValue + "-bootstrap-grid.css", $("code").text() );
+	download(prefixValue + "-bootstrap-grid.css", $("code.language-css").text() );
 });
 
 
